@@ -1,0 +1,87 @@
+#include <windows.h>
+#include "Sources/menu.h"
+
+DETCTS DIALOG 18, 18, 95, 70
+CAPTION "Connect to server"
+STYLE DS_MODALFRAME | WS_POPUP | WS_BORDER | WS_SYSMENU
+{
+	DEFPUSHBUTTON "Connect", IDD_BCONNECTION, 2, 53, 91, 15,
+				WS_CHILD | WS_VISIBLE | WS_TABSTOP	
+	
+	EDITTEXT IDD_EDIP, 	      5,  5, 60, 12,
+				WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_BORDER 
+				
+	EDITTEXT IDD_EDPORT, 	 70,  5, 22, 12,
+				WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_BORDER 
+	
+	EDITTEXT IDD_EDNAME, 	  5, 22, 86, 12,
+				WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_BORDER 
+				
+	EDITTEXT IDD_EDPASSWORD,  5, 37, 86, 12,
+				WS_CHILD | WS_VISIBLE | WS_TABSTOP | WS_BORDER | ES_PASSWORD
+	 
+}
+
+xMENU MENU
+{
+
+POPUP "&Settings"
+{
+
+  POPUP "&Fonts" 
+  {
+	  POPUP "&Fonts" 
+	  {
+	   	  POPUP "&Your" 
+		  {
+		  	MENUITEM "&SYSTEM_FONT",		 111 
+		  	
+		  	MENUITEM "&SYSTEM_FIXED_FONT",	 112 
+		  	MENUITEM "&ANSI_VAR_FONT",		 113 
+		  	MENUITEM "&ANSI_FIXED_FONT", 	 114 
+		  	MENUITEM "&OEM_FIXED_FONT",		 115 
+		  	MENUITEM "&DEVICE_DEFAULT_FONT", 116 
+		  }
+		
+		  POPUP "&Interlocutor" 
+		  {
+		  	MENUITEM "&SYSTEM_FONT",		 121 
+		  	MENUITEM "&SYSTEM_FIXED_FONT",	 122 
+		  	MENUITEM "&ANSI_VAR_FONT",		 123 
+		  	MENUITEM "&ANSI_FIXED_FONT", 	 124 
+		  	MENUITEM "&OEM_FIXED_FONT",		 125 
+		  	MENUITEM "&DEVICE_DEFAULT_FONT", 126 
+		  }	
+	  }
+	
+	  POPUP "&Color" 
+	  {
+		  POPUP "&For You" 
+		  {
+			MENUITEM "&Red",		117
+		  	MENUITEM "&Green",	    118 
+		  	MENUITEM "&Blue",		119 
+		  	MENUITEM "&Orange",		120 
+		  	MENUITEM "&White",		121 
+		  	MENUITEM "&Black",	    122
+		  }
+		
+		  POPUP "&For Interlocutor" 
+		  {
+			MENUITEM "&Red",		127 
+		  	MENUITEM "&Green",	    128
+		  	MENUITEM "&Blue",		129 
+		  	MENUITEM "&Orange",		130 
+		  	MENUITEM "&White",		131 
+		  	MENUITEM "&Black",	    132
+		  }	
+	  }
+  }
+
+}
+
+MENUITEM "&Connect to server",  IDD_CtS 
+MENUITEM "&About",          	109 
+}
+
+MYICON ICON ico.ico

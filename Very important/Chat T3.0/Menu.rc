@@ -1,0 +1,62 @@
+
+xMENU MENU
+{
+
+POPUP "&Settings"
+{
+
+  POPUP "&Fonts" 
+  {
+	  POPUP "&Fonts" 
+	  {
+	   	  POPUP "&Your" 
+		  {
+		  	MENUITEM "&SYSTEM_FONT",		 111 
+		  	MENUITEM "&SYSTEM_FIXED_FONT",	 112 
+		  	MENUITEM "&ANSI_VAR_FONT",		 113 
+		  	MENUITEM "&ANSI_FIXED_FONT", 	 114 
+		  	MENUITEM "&OEM_FIXED_FONT",		 115 
+		  	MENUITEM "&DEVICE_DEFAULT_FONT", 116 
+		  }
+		
+		  POPUP "&Interlocutor" 
+		  {
+		  	MENUITEM "&SYSTEM_FONT",		 121 
+		  	MENUITEM "&SYSTEM_FIXED_FONT",	 122 
+		  	MENUITEM "&ANSI_VAR_FONT",		 123 
+		  	MENUITEM "&ANSI_FIXED_FONT", 	 124 
+		  	MENUITEM "&OEM_FIXED_FONT",		 125 
+		  	MENUITEM "&DEVICE_DEFAULT_FONT", 126 
+		  }	
+	  }
+	
+	  POPUP "&Color" 
+	  {
+		  POPUP "&For You" 
+		  {
+			MENUITEM "&Red",		117
+		  	MENUITEM "&Green",	    118 
+		  	MENUITEM "&Blue",		119 
+		  	MENUITEM "&Orange",		120 
+		  	MENUITEM "&White",		121 
+		  	MENUITEM "&Black",	    122
+		  }
+		
+		  POPUP "&For Interlocutor" 
+		  {
+			MENUITEM "&Red",		127 
+		  	MENUITEM "&Green",	    128
+		  	MENUITEM "&Blue",		129 
+		  	MENUITEM "&Orange",		130 
+		  	MENUITEM "&White",		131 
+		  	MENUITEM "&Black",	    132
+		  }	
+	  }
+  }
+
+}
+
+MENUITEM "&About",          109 
+}
+
+MYICON ICON ico.ico
